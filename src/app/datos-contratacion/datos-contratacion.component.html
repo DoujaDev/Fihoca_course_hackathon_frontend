@@ -1,0 +1,47 @@
+<div class="container">
+  <h4 class="pregunta"> Datos contratación</h4>
+  
+  <mat-form-field >
+    <input matInput placeholder="nombre y apellidos">
+  </mat-form-field>
+  
+  <mat-form-field >
+    <input matInput placeholder="DNI">
+  </mat-form-field>
+  
+  <mat-form-field >
+    <input matInput placeholder="Dirección completa">
+  </mat-form-field>
+  
+  <mat-form-field >
+    <input matInput placeholder="Número de hijos">
+  </mat-form-field>
+
+  <mat-form-field >
+    <input matInput placeholder="número de coches por unidad familiar">
+  </mat-form-field>
+
+  
+  <mat-form-field >
+    <!--No necesario-->
+    <input matInput placeholder="Teléfono fijo">
+  </mat-form-field>
+
+  <p>La dirección es la misma que la casa a asegurar? </p>
+  <button mat-button class="butcontra" >Sí</button>
+  <button mat-button class="butcontra">No</button>
+  <p>El tomador es el mismo que el asegurado?</p>
+  <button mat-button class="butcontra">Sí</button>
+  <button mat-button class="butcontra">No</button>
+<div class="privacidad">
+  <mat-checkbox class="example-margin" [(ngModel)]="checkedPoliticaPrivacidad">He leído y acepto la política de privacidad</mat-checkbox>
+</div>
+<div class="datos">
+  <mat-checkbox class="example-margin" [(ngModel)]="checkedEnviarOfertas">Autorizo a que Generali trate mis datos<br/> para enviarme ofertas comerciales</mat-checkbox>
+</div>
+
+  <div class="seguimiento">
+        <button mat-button class="butredondo" (click)="navigateToAtras()">Atrás</button>
+        <button mat-button class="butsig" (click)="navigateToSiguiente()">Siguiente</button>
+  </div>
+</div>

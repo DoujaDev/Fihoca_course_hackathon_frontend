@@ -1,0 +1,83 @@
+<div class="container">
+<h4 class="pregunta">Datos personales</h4>
+
+<p class="titulo">fechaefecto</p>
+<mat-form-field >
+    <input matInput placeholder={{fechaefecto}}>
+</mat-form-field>
+
+<p class="titulo">Tipo de vía </p>
+<mat-form-field >
+    <input matInput placeholder={{tipovia}} >
+</mat-form-field>
+
+<p class="titulo"> Nombre de vía</p>
+<mat-form-field >
+    <input matInput placeholder={{nombrevia}} >
+</mat-form-field>
+
+<p class="titulo"> Número</p>
+<mat-form-field >
+    <input matInput placeholder={{numerovia}} >
+</mat-form-field>
+
+<p class="titulo"> Piso</p>
+<mat-form-field >
+    <input matInput placeholder={{pisovia}} >
+</mat-form-field>
+
+<p class="titulo"> Puerta</p>
+<mat-form-field >
+    <input matInput placeholder={{puertavia}} >
+</mat-form-field>
+
+<p class="titulo"> Codigo postal</p>
+<mat-form-field >
+    <input matInput placeholder={{codigopostal}} >
+</mat-form-field>
+
+<p class="titulo"> Población</p>
+<mat-form-field >
+    <input matInput placeholder={{poblacion}} >
+</mat-form-field>
+
+<p class="titulo">Nombre y apellidos</p>
+<mat-form-field >
+    <input matInput placeholder={{nombreyapellidos}} >
+</mat-form-field>
+
+<p class="titulo">DNI</p>
+<mat-form-field >
+    <input matInput placeholder={{dni}} >
+</mat-form-field>
+
+<p class="titulo">Teléfono</p>
+<mat-form-field >
+    <input matInput placeholder={{telefono}} >
+</mat-form-field>
+
+<p class="titulo">Teléfono complementario</p><!--Opción a poder ponerlo-->
+<mat-form-field >
+    <input matInput placeholder={{telefonocomplementario}} >
+</mat-form-field>
+
+<p class="titulo">Estado civil</p>
+<mat-form-field >
+    <input matInput placeholder={{estadocivil}} >
+</mat-form-field>
+
+<p class="titulo"> Número de hijos</p>
+<mat-form-field >
+    <input matInput placeholder={{numerohijos}} >
+</mat-form-field>
+
+<p class="titulo"> Número de coches unidad familiar</p>
+<mat-form-field >
+    <input matInput placeholder={{numerocoches}} >
+</mat-form-field>
+
+<div class="seguimiento">
+    <button mat-button class="butredondo"(click)="navigateToAtras()">Atrás</button>
+    <button mat-button class="butsig"(click)="navigateToSiguiente()">Siguiente</button>
+    </div>
+</div>

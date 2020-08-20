@@ -1,0 +1,15 @@
+<div class="container">
+<form [formGroup]="formFechaEfecto">
+<h4 class="pregunta">¿Cuando será la contratación o renovación de el seguro?</h4>
+<mat-form-field>
+    <input class="dataefecto" matInput [matDatepicker]="picker"  [(ngModel)]="fechaEfecto"  formControlName= "fechaEfecto" placeholder="Choose a date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+</form>
+
+<div class="seguimiento">
+  <button mat-button class="butredondo"(click)="navigateToAtras()">Atrás</button>
+    <button mat-button class="butsig"(click)="navigateToSiguiente()" [disabled]="formFechaEfecto.invalid" >Siguiente</button>
+    </div>
+</div>

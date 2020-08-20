@@ -1,0 +1,41 @@
+<div class="container">
+
+<h4 class="pregunta">¿Tiene su vivienda asegurada en la actualidad? </h4>
+
+<button class="fuera"mat-button (click)="setRespuesta(false)">No</button>
+<button class="fuera"mat-button (click)="setRespuesta(true)">Sí</button>
+
+<!--Si tuviera uno, entonces saldría lo que hay ha continuación-->
+
+<div class="tieneseguro" *ngIf="seguroActual">
+    <h4 class="pregunta"> Indicanos tu compañia actual</h4>
+
+    <button mat-button (click)="setEmpresaSeguroActual('allianz')" > <img src="../assets/companies/logo-allianz.png"> </button>
+    <button mat-button (click)="setEmpresaSeguroActual('axa')" ><img src="../assets/companies/logo-axa.png"></button>
+    <button mat-button (click)="setEmpresaSeguroActual('caser')" ><img src="../assets/companies/logo-caser.png"></button>
+    <button mat-button (click)="setEmpresaSeguroActual('occidente')" ><img src="../assets/companies/logo-catalana-occidente.png"></button>
+    <button mat-button (click)="setEmpresaSeguroActual('fenix')" ><img src="../assets/companies/logo-fenix-directo.png"></button>
+    <button mat-button (click)="setEmpresaSeguroActual('fiatc')" ><img src="../assets/companies/logo-fiatc.png"></button>
+    <button mat-button (click)="setEmpresaSeguroActual('mafre')" ><img src="../assets/companies/logo-mafre.png"></button>
+    <button mat-button (click)="setEmpresaSeguroActual('muta')" ><img src="../assets/companies/logo-muta-madrileña.png"></button>
+    <button mat-button (click)="setEmpresaSeguroActual('ocaso')" ><img src="../assets/companies/logo-ocaso.png"></button>
+    <button mat-button (click)="setEmpresaSeguroActual('zurich')" ><img src="../assets/companies/logo-zurich.png"></button>
+    <br>
+    <button mat-button>Otra</button>
+    <br>
+  <button mat-button>No me siento comodo respondiendo</button>
+
+    <h4 class="pregunta">¿Cuál es la fecha de finalización de el seguro actual?</h4>
+    <mat-form-field>
+        <input class="dataefecto" matInput [matDatepicker]="picker" [(ngModel)]="fechafinalizacion" placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+</div>
+
+
+  <div class="seguimiento">
+    <button mat-button class="butredondo"(click)="navigateToAtras()">Atrás</button>
+    <button mat-button class="butsig"(click)="navigateToSiguiente()">Siguiente</button>
+  </div>
+</div>

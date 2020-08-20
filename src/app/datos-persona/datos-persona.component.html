@@ -1,0 +1,39 @@
+<div class="container">
+<h4 class="pregunta">Datos personales</h4>
+
+<p>Email</p>
+<mat-form-field class="example-full-width">
+    <textarea matInput placeholder=""></textarea>
+  </mat-form-field>
+
+  <p>Teléfono</p>
+  <mat-form-field class="example-full-width">
+    <textarea matInput placeholder=""></textarea>
+  </mat-form-field>
+
+  <p>Fecha de nacimiento</p>
+  <mat-form-field class="example-full-width">
+    <textarea matInput placeholder=""></textarea>
+  </mat-form-field>
+
+  <p>¿Dónde naciste?</p>
+  <button class="nacion" mat-button>España</button>
+  <button class="nacion" mat-button>En el mundo</button>
+  <!--Si clican a del mundo sale un select con las nacionalidades-->
+  <mat-form-field>
+    <mat-label>nacionalidad</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let nacionalidad of nacionalidades" [value]="nacionalidad.value">
+        {{nacionalidad.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+  <mat-checkbox class="example-margin" [(ngModel)]="checked">He leido y acepto</mat-checkbox>
+
+
+  <div class="seguimiento">
+    <button mat-button class="butredondo"(click)="navigateToAtras()">Atrás</button>
+    <button mat-button class="butsig"(click)="navigateToSiguiente()">Siguiente</button>
+    </div>
+  </div>

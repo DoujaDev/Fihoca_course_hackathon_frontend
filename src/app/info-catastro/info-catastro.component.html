@@ -1,0 +1,47 @@
+<div class="container">
+
+<h4 class="pregunta">Información de la vivienda</h4>
+<p>Tipo de vivienda</p>
+<mat-form-field>
+  <mat-label>tipo</mat-label>
+  <mat-select [(ngModel)]="valorTipoVivienda" name="tipoVivienda" [(value)]="valorTipoVivienda" >
+    <mat-option *ngFor="let tipoVivienda of tipoViviendas" [value]="tipoVivienda.value"  required>
+      {{tipoVivienda.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+
+ 
+<p>Tipo de contrucción</p>
+<mat-form-field>
+  <mat-label>tipo</mat-label>
+  <mat-select [(ngModel)]="valorTipoContruccion" name="tipoContruccion">
+    <mat-option *ngFor="let tipoContruccion of tipoConstrucciones" [value]="tipoContruccion.value">
+      {{tipoContruccion.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<form [formGroup]="infoCatastro">
+<p>Año de contrucción</p>
+<mat-form-field>
+  <input matInput [matDatepicker]="picker" [(ngModel)]="anyoConstruccion"  formControlName= "anyoConstruccion" placeholder={{anyocontruccion}}>
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+<p>Superficie contruida</p>
+<mat-form-field class="example-full-width">
+  <textarea matInput formControlName= "superficieConstruida"  [(ngModel)]="superficieConstruida" value="{{superficieConstruida}}"></textarea>
+</mat-form-field> 
+</form>
+
+
+
+
+<div class="seguimiento">
+  <button mat-button class="butredondo" (click)="navigateToAtras()">Atrás</button>
+    <button mat-button class="butsig" (click)="navigateToSiguiente()" [disabled]="infoCatastro.invalid">Siguiente</button>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+
+input{
+    border-bottom: 1px solid grey;
+
+}
+
+
+.butredondo{
+  background-color: white;
+  color: #c52a1d;
+  border: 1px solid #c52a1d;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+
+}
+.butsig{
+  background-color: #c52a1d;
+  color: white;
+  text-align: center;
+  display: inline-block;
+
+
+}

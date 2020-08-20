@@ -1,0 +1,25 @@
+  <div class="container">
+    <div class="uso">
+          <h4 class="pregunta">¿Qué relación tiene con la vivienda? </h4>
+        
+          <button mat-button (click)="setRelation('propietaro')">Propietaro en propiedad</button>
+          <br>
+          <button mat-button (click)="setRelation('propietaro')">Propietaro y la tengo alquilada</button>
+          <br>
+          <button mat-button (click)="setRelation('inquilino')">Inquilino</button>
+
+          <h4 class= "pregunta">¿Qué uso se le da a la vivienda? </h4>
+
+          <button mat-button (click)="setUso('habitual')">Habitual</button>
+          <br>
+          <button mat-button (click)="setUso('secundaria')">Fines de semana</button>
+          <br>
+          <button mat-button (click)="setUso('vacacional')">Vacacional</button>
+          <br>
+          <button mat-button (click)="setUso('desocupada')">Desocupada</button>
+          </div>
+          <div class="">
+            <button mat-button class="butsig"(click)="navigateToSiguiente()">Siguiente</button>
+          </div>
+  
+  </div>

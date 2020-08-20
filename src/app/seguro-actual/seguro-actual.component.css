@@ -1,0 +1,33 @@
+.fuera{
+    width:30px;
+    margin:2px;
+    border: 1px solid #D7D7D7;
+}
+.tieneseguro button{
+    margin:2px;
+    align-content: center;
+    border: 1px solid #D7D7D7;
+}
+.tieneseguro button img{
+  width:50px;
+  height: 50px;
+}
+
+
+.butredondo{
+  background-color: white;
+  color: #c52a1d;
+  border: 1px solid #c52a1d;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+}
+.butsig{
+  background-color: #c52a1d;
+  color: white;
+  text-align: center;
+  display: inline-block;
+
+
+}
